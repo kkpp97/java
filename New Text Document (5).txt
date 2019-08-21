@@ -1,35 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
+Design a SPRING BOOT REST controller application for below functionalities.
 
-<beans xmlns="http://www.springframework.org/schema/beans"
+1.            To Add Product Details in Database
 
-                xmlns:context="http://www.springframework.org/schema/context"
+2.            To update Product details like price and quantity Name using product id in database
 
-                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+3.            To view all Product Details
 
-                xmlns:mvc="http://www.springframework.org/schema/mvc"
+4.            To delete product details based on product id
 
-                xmlns:tx="http://www.springframework.org/schema/tx"
+5.            To view Product based on id (using PathVariable)
 
-               
+6.  To View product based on category (using Request Param)
 
-                xsi:schemaLocation="
+7.  product Category should be Mobile,TV,Laptop
 
-        http://www.springframework.org/schema/beans    
+8.  product quantity should be greater than 0
 
-        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+9.  Generate Product id using database sequence.
 
-        http://www.springframework.org/schema/context
+Specification:
 
-        http://www.springframework.org/schema/context/spring-context.xsd
+•             Layered architecture implementation is a must.
 
-        http://www.springframework.org/schema/mvc
+•             Use Spring framework for managing Service and DAO layer dependencies.
 
-        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+•             Save Session to database table using data JPA.
 
-        http://www.springframework.org/schema/tx
+•             Proper indentation, naming convention and comments are mandatory.
 
-                                http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+ 
 
-               
+public class Product  {
 
-                </beans>
+                private int id;
+
+private String name;
+
+private int category;
+
+private String quantity;
+
+private String price;
+
+ 
+
+// Getters, Setters and toString() implementation
+
+}
